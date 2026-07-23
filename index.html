@@ -34,12 +34,25 @@
     padding: 72px 0 48px;
     border-bottom: 1px solid var(--border);
   }
+  .identity {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 24px;
+  }
+  .headshot {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid var(--accent);
+    flex-shrink: 0;
+  }
   .wordmark {
     font-size: 15px;
     letter-spacing: 0.08em;
     text-transform: uppercase;
     color: var(--accent);
-    margin-bottom: 16px;
     font-weight: 600;
   }
   h1 {
@@ -123,7 +136,10 @@
 <body>
   <div class="wrap">
     <header>
-      <div class="wordmark">thefractionalcto.uk</div>
+      <div class="identity">
+        <img class="headshot" src="assets/david-headshot.jpg" alt="David Laubscher">
+        <div class="wordmark">thefractionalcto.uk</div>
+      </div>
       <h1>20 years of hands-on IT leadership, for growing businesses.</h1>
       <p class="tagline">Fractional Head of IT / CTO. Infrastructure, cost control, security — and where AI actually helps.</p>
     </header>
